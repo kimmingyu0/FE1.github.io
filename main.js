@@ -28,7 +28,7 @@ const openNav = () => {
     }
   };
 // 메인화면 슬릭
-
+$(document).ready(function(){
 $(document).ready(function() {
     $('.one-time').slick({
         dots: true,
@@ -113,4 +113,5 @@ $(document).ready(function() {
             $('video').fadeIn();
         }
     })
+})
 });
