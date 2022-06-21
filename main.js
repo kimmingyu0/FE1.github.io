@@ -28,8 +28,8 @@ const openNav = () => {
     }
   };
 // 메인화면 슬릭
-$(document).ready(function(){
-$(document).ready(function() {
+
+$(document).ready(function () {
     $('.one-time').slick({
         dots: true,
         infinite: true,
@@ -43,7 +43,6 @@ $(document).ready(function() {
         dots: true,
         dotsClass: 'bn-controller',
     });
-
     $('.multiple-items').slick({
         infinite: true,
         slidesToShow: 2,
@@ -54,7 +53,10 @@ $(document).ready(function() {
         slidesToScroll: 3
     });
 
-    //메인 스크롤 이벤트
+})
+
+//메인 스크롤 이벤트
+$(document).ready(function () {
     let controller = new ScrollMagic.Controller();
     let animateElem = [".animate_1", ".animate_2", ".animate_3"];
     let triggerElem = [".trigger_1", ".trigger_2", ".trigger_3"];
@@ -113,5 +115,4 @@ $(document).ready(function() {
             $('video').fadeIn();
         }
     })
-})
 });
